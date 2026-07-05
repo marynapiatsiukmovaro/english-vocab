@@ -6,15 +6,29 @@
 <title>📘 English Vocabulary — Marina</title>
 <style>
   body{font:16px/1.6 -apple-system,Arial,sans-serif;margin:0;color:#1a1a1a;background:#f6f8ff}
-  .wrap{max-width:640px;margin:0 auto;padding:28px 18px}
+  .wrap{max-width:660px;margin:0 auto;padding:28px 18px}
   h1{font-size:24px;margin:0 0 6px}
-  .sub{color:#777;font-size:14px;margin-bottom:24px}
+  .sub{color:#777;font-size:14px;margin-bottom:22px}
+  h2{font-size:15px;margin:26px 0 10px;color:#11203a}
   a.card{display:block;text-decoration:none;color:inherit;background:#fff;border:1px solid #cdd9ff;
-         border-radius:14px;padding:18px 20px;margin:0 0 14px;box-shadow:0 1px 4px rgba(0,0,0,.04)}
+         border-radius:14px;padding:16px 18px;margin:0 0 12px;box-shadow:0 1px 4px rgba(0,0,0,.04)}
   a.card:active{background:#eef3ff}
-  .t{font-size:18px;font-weight:700;color:#11203a}
-  .d{color:#666;font-size:14px;margin-top:4px}
-  .foot{color:#999;font-size:12px;margin-top:22px;text-align:center}
+  .t{font-size:17px;font-weight:700;color:#11203a}
+  .d{color:#666;font-size:13px;margin-top:4px}
+  a.arch{border-style:dashed;opacity:.75}
+  /* dashboard */
+  table{border-collapse:collapse;width:100%;font-size:13px;background:#fff;border-radius:12px;overflow:hidden;
+        box-shadow:0 1px 4px rgba(0,0,0,.05)}
+  th,td{padding:9px 10px;text-align:left;border-bottom:1px solid #eef}
+  th{background:#11203a;color:#fff;font-size:11px;font-weight:600}
+  td.day{font-weight:700;color:#11203a;white-space:nowrap}
+  .src{font-size:11px;color:#999}
+  .chip{display:inline-block;font-size:11px;padding:2px 8px;border-radius:20px;white-space:nowrap}
+  .due{background:#fff4d6;color:#8a6100;border:1px solid #f2d488}
+  .future{background:#eef1f6;color:#667;border:1px solid #dde2ea}
+  .done{background:#e3f7e8;color:#1c7a37;border:1px solid #b7e6c4}
+  .foot{color:#999;font-size:12px;margin-top:24px;text-align:center}
+  .note{font-size:12px;color:#888;margin:2px 0 14px}
 </style>
 </head>
 <body>
@@ -22,17 +36,53 @@
   <h1>📘 English Vocabulary</h1>
   <div class="sub">Словарь Марины · картинки-ассоциации · открывай и учи 📱</div>
 
-  <a class="card" href="video-vocabulary.html">
-    <div class="t">📺 Основной словарь — 60 слов/день</div>
-    <div class="d">School of Hard Knocks + разговор + тетрадь. День 1 (60) · День 2 (60) · День 3 (60) · День 4 (тетрадь, 60) · День 5 (тетрадь, 5 → ~60).</div>
+  <h2>🔁 Расписание повторений</h2>
+  <div class="note">Подсвечено жёлтым = пора повторить. Проверяй по сегодняшней дате.</div>
+  <table>
+    <thead>
+      <tr><th>День</th><th>Что дальше</th><th>Дата</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="day">День 1<div class="src">видео</div></td>
+        <td><span class="chip due">+3 · Review A (пропуски)</span></td>
+        <td>5 июл</td>
+      </tr>
+      <tr>
+        <td class="day">День 2<div class="src">видео</div></td>
+        <td><span class="chip due">+3 · Review A (пропуски)</span></td>
+        <td>6 июл</td>
+      </tr>
+      <tr>
+        <td class="day">День 3<div class="src">видео</div></td>
+        <td><span class="chip due">+1 · Этап 1+2</span></td>
+        <td>5 июл</td>
+      </tr>
+      <tr>
+        <td class="day">День 4<div class="src">тетрадь</div></td>
+        <td><span class="chip due">Изучить (60 слов)</span></td>
+        <td>5 июл</td>
+      </tr>
+      <tr>
+        <td class="day">День 5<div class="src">тетрадь</div></td>
+        <td><span class="chip future">Изучить (собираем)</span></td>
+        <td>6 июл</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>📚 Словари</h2>
+  <a class="card" href="days-01-10.html">
+    <div class="t">📖 Блок 1 · Дни 1–10</div>
+    <div class="d">Видео (School of Hard Knocks) + разговор + тетрадь. Сейчас: Дни 1–5 · 245 слов. Растёт до ~600.</div>
   </a>
 
-  <a class="card" href="vocabulary.html">
-    <div class="t">📚 Тетрадь — исходник (архив)</div>
-    <div class="d">Перенесено и обогащено в «Основной словарь» → День 4. Оставлено как архив.</div>
+  <a class="card arch" href="vocabulary.html">
+    <div class="t">📦 Тетрадь — исходник (архив)</div>
+    <div class="d">Перенесено и обогащено в Блок 1 → День 4–5. Оставлено как архив.</div>
   </a>
 
-  <div class="foot">Обновляется по мере добавления новых слов.</div>
+  <div class="foot">Новые блоки (Дни 11–20 и далее) появятся здесь по мере роста.</div>
 </div>
 </body>
 </html>
